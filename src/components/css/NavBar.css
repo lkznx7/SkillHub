@@ -1,0 +1,42 @@
+.BarraDenavegacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 40px;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  
+  background: rgba(15, 15, 26, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.BarraDenavegacao a {
+  text-decoration: none;
+  color: var(--text-gray);
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 0.95rem;
+}
+
+.BarraDenavegacao a:hover {
+  color: var(--primary-color);
+}
+
+
+.BarraDenavegacao .btn-destaque {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.BarraDenavegacao .btn-destaque:hover {
+  background-color: var(--primary-hover);
+  color: white;
+}

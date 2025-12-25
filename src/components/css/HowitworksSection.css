@@ -1,0 +1,50 @@
+.howitworks-section {
+  background-color: #0f0c29;
+  padding: 5rem 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.howitworks-header h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.steps-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.step-item {
+  background-color: rgba(27, 27, 56, 0.6); 
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-color); 
+  color: var(--text-gray);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.step-item:hover {
+  background-color: #1b1b38;
+  transform: translateX(10px); 
+}
+
+
+.step-item strong {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-right: 15px;
+  font-weight: 800;
+  text-shadow: 0 0 10px rgba(123, 44, 191, 0.4);
+}

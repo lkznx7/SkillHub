@@ -1,0 +1,218 @@
+
+:root {
+  --bg-dark: #0f0c29;
+  --bg-card: #1b1b38;
+  --primary-color: #7b2cbf;
+  --primary-hover: #9d4edd;
+  --text-white: #ffffff;
+  --text-gray: #a0a0b0;
+  --input-bg: #141427;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --shadow-neon: 0 0 15px rgba(123, 44, 191, 0.3);
+}
+
+.registration-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-dark); 
+  color: var(--text-white);
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.registration-container .reg-side-visual {
+  flex: 0 0 60%;
+  width: 60%;
+  max-width: 60%;
+  position: relative;
+  background-color: #000;
+  display: none; 
+}
+
+.registration-container .reg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+
+.registration-container .visual-content {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  z-index: 2;
+  width: 80%;
+}
+
+.registration-container .visual-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: var(--text-white);
+  text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+}
+
+.registration-container .visual-content p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+}
+
+
+.registration-container .reg-side-form {
+  flex: 0 0 40%;
+  width: 40%;
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--bg-dark);
+}
+
+
+.registration-container .card-reg {
+  width: 100%;
+  max-width: 480px;
+  background-color: var(--bg-card);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border-color);
+}
+.registration-container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-white);
+}
+
+.registration-container .subtitle {
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.registration-container .btn-back {
+  display: inline-block;
+  color: var(--text-gray);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s;
+}
+
+.registration-container .btn-back:hover {
+  color: var(--primary-color);
+}
+
+
+.registration-container .input-group {
+  margin-bottom: 1.2rem;
+}
+
+.registration-container .input-group label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-gray);
+  margin-bottom: 0.5rem;
+}
+
+.registration-container .input-group input {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-white);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.registration-container .input-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(123, 44, 191, 0.1);
+}
+
+.registration-container .input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+.registration-container .btn-register {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.registration-container .btn-register:hover {
+  background-color: var(--primary-hover);
+  box-shadow: var(--shadow-neon);
+}
+
+.registration-container .btn-register:active {
+  transform: scale(0.98);
+}
+
+
+.registration-container .footer-reg {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.registration-container .footer-reg a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.registration-container .footer-reg a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+@media (min-width: 1024px) {
+  .registration-container .reg-side-visual {
+    display: block;
+  }
+}
+
+@media (max-width: 1023px) {
+  .registration-container {
+    flex-direction: column;
+  }
+
+  .registration-container .reg-side-visual {
+    display: none;
+  }
+
+  .registration-container .reg-side-form {
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .registration-container .card-reg {
+    max-width: 500px;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+}
