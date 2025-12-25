@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './css/PageUser.css'; 
 import { Link } from 'react-router-dom';
 
