@@ -1,4 +1,4 @@
-import '/home/lucas/ExReact/LP/src/components/css/SocialproofSection.css'
+import './css/SocialproofSection.css'
 
 function SocialproofSection(){
     return(

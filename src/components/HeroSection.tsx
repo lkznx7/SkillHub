@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import '/home/lucas/ExReact/LP/src/components/css/HeroSection.css'
+import './css/HeroSection.css'
 function HeroSection() {
 
     const navigate = useNavigate()

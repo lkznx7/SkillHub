@@ -1,4 +1,4 @@
-import '/home/lucas/ExReact/LP/src/components/css/BenefitsSection.css'
+import './css/BenefitsSection.css'
 function BenefitsSection(){
     return(
         <section className="benefits-container" id="BenefitsSection">

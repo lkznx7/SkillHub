@@ -1,4 +1,4 @@
-import '/home/lucas/ExReact/LP/src/components/css/HowitworksSection.css'
+import './css/HowitworksSection.css'
 function HowitworksSection(){
     return(
         <section className="howitworks-section" id="HowitWorksSection">

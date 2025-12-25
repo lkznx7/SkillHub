@@ -1,6 +1,6 @@
 import { useState, type FormEvent, type ChangeEvent } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import '/home/lucas/ExReact/LP/src/components/css/PageLogin.css'; // Confirme se o caminho do CSS está certo
+import './css/PageLogin.css'; 
 
 function PageLogin() {
 

@@ -1,4 +1,4 @@
-import '/home/lucas/ExReact/LP/src/components/css/NavBar.css'
+import './css/NavBar.css'
 function NavBar(){
     return(
         <nav className="BarraDenavegacao">

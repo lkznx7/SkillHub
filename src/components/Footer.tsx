@@ -1,4 +1,4 @@
-import '/home/lucas/ExReact/LP/src/components/css/footer.css'
+import './css/footer.css'
 
 function Footer() {
     return (
